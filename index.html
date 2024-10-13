@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Nav Menu-->
+    <div class="container">
+        <nav class="header">
+            <div class="logo">
+                <div class="name">Chetan</div>
+            </div>
+            <div class="menu" id="NavMenu">
+                <ul class="menu-list">
+                    <li class="nav-list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <!--Dark Mode-->
+            <div class="mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class=" fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <!--Main-->
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="hello">
+                        <p>Hello, I'am</p>
+                    </div>
+                    <div class="featured-name">
+                        <span class="typedText" style="font-size: larger;"></span>
+                    </div>
+
+                    <div class="text-btn">
+                        <button class="btn hire-button">Hire Me</button>
+                        <button class="btn">Download CV<i class="uil uil-file"></i></button>
+                    </div>
+                    <div class="social-icon">
+                        <div class="icons-circle"></div>
+                        <div class="icon"><i class="uil uil-instagram"></i></div>
+                        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                        <div class="icon"><i class="uil uil-behance-alt"></i></div>
+                        <div class="icon"><i class="uil uil-github-alt"></i></div>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="https://img.freepik.com/premium-vector/software-engineer-writing-code-computer-coder-programming-database-programmer-typing-script-solves-problems-algorithm-digital-development-flat-isolated-vector-illustration-white_633472-6162.jpg?size=626&ext=jpg&ga=GA1.1.1510265034.1721298087&semt=ais_hybrid-rr-similar"
+                            alt="image">
+                    </div>
+                </div>
+            </section>
+            <!--About Box-->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <figure class="about-me">
+                                <figcaption>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/6818/6818202.png" alt=""
+                                        class="profile" />
+                                    <h2>Web Developer</h2>
+                                    <p>My Name is Chetan! , I'am Web Developer</p>
+
+                            </figure>
+                            <button class="about-me-btn">Hire Me</button>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-box">
+                            <span class="title">Html</span>
+                            <div class="skill-bar html">
+                                <span class="skill-per">
+                                    <span class="tooltip">90%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-box">
+                                <span class="title">CSS</span>
+                                <div class="skill-bar css">
+                                    <span class="skill-per">
+                                        <span class="tooltip">80%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-box">
+                                    <span class="title">Javascript</span>
+                                    <div class="skill-bar Javascript">
+                                        <span class="skill-per">
+                                            <span class="tooltip">75%</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-box">
+                                        <span class="title">Tailwind Css</span>
+                                        <div class="skill-bar tailwind">
+                                            <span class="skill-per">
+                                                <span class="tooltip">70%</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-box">
+                                            <span class="title">React</span>
+                                            <div class="skill-bar react">
+                                                <span class="skill-per">
+                                                    <span class="tooltip">50%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            </section>
+            <!--Project Box-->
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Completed</h3>
+                        <label> :- 20+ finshed projects</label>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-box">
+                            <i class="uil uil-users-alt"></i>
+                            <h3>Clients</h3>
+                            <label> :- 30+ Happy Clients</label>
+                        </div>
+                        <div class="project-container">
+                            <div class="project-box">
+                                <i class="uil uil-award"></i>
+                                <h3>Experienced</h3>
+                                <label> :- 6+ months experienced in web development</label>
+                            </div>
+
+                        </div>
+            </section>
+            <!--Contact Box-->
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Let's Work together</h1>
+                    <span>Do You Have a Project in your Mind , Contact me Here</span>
+                </div>
+                <div class="row">
+                    <dic class="col">
+                        <div class="contact-info">
+                            <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"> Email: chetanrao2310@gmail.com</i></p>
+                            <p><i class="uil uil-phone"> Phone: 8447284045</i></p>
+                        </div>
+                    </dic>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-fields" placeholder="Your Name">
+                                <input type="text" class="input-fields" placeholder="Your Email">
+                            </div>
+                            <div class="text-area">
+                                <input type="text" class="input-subject" placeholder="Subjects">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Send<i class="uil uil-message"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer-menu-list"><a href="#home">Home</a></li>
+                    <li class="footer-menu-list"><a href="#about">About</a></li>
+                    <li class="footer-menu-list"><a href="#projects">Projects</a></li>
+                    <li class="footer-menu-list"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="fa-brands fa-linkin-in icon"></i></div>
+                <div class="icon"><i class="uil uil-behance-alt"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy;<a href="#home" style="text-decoration: none;">Chetan</a> All right reserved 2024</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"
+        integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function myMenuFunction() {
+            var menuBath = document.getElementById('NavMenu');
+            if (menuBath.className === 'menu') {
+                menuBath.className += 'responsive';
+            }
+            else {
+                menuBath.className = 'menu';
+
+            }
+        }
+
+        /**--dark mode--*/
+        const body = document.querySelector('body'),
+            toggle = document.getElementById('toggle-switch');
+        toggle.addEventListener("click", () => {
+            body.classList.toggle('dark');
+        })
+
+        /**typing effect--*/
+        var typing = new Typed('.typedText', {
+            strings: ["Chetan", "coder", "web developer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+
+        });
+
+        /**scroll aniation */
+        const sr = ScrollReveal({
+            origin: "top",
+            distance : "80px",
+            duration: 2000,
+            reset : true,
+        });
+
+        sr.reveal('.featured-name', {
+            delay: 100
+        })
+        sr.reveal(".text-info",{
+            delay: 200
+        })
+        sr.reveal(".text-icons",{
+            delay: 200
+        })
+        sr.reveal(".social-icon",{
+            delay: 200
+        })
+        sr.reveal(".featured-image",{
+            delay: 320
+        })
+
+        sr.reveal('.project-box',{
+            interval : 200
+        })
+
+        sr.reveal('.top-header',{
+
+        })
+
+        const srLeft = SrollReveal({
+            origin: "left",
+            distance : "80px",
+            duration: 2000,
+            reset : true,
+        })
+
+        srLeft.reveal('.about-info',{
+            delay : 100
+        })
+
+        srLeft.reveal('.contact-info', {
+            delay : 100
+        })
+
+    </script>
+
+</body>
+
+</html>
