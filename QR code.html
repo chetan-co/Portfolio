@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #262a2f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      padding: 25px 35px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .container p {
+      font-weight: 600;
+      font-size: 15px;
+      margin-top: 8px;
+    }
+
+    .container input {
+      width: 100%;
+      height: 50px;
+      border: 1px solid #494eea;
+      outline: 0;
+      padding: 10px;
+      margin: 10px 0 20px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .container button {
+      width: 100%;
+      height: 50px;
+      outline: 0;
+      background: #494eea;
+      color: #fff;
+      border: 0;
+      border-radius: 5px;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    #image {
+      margin-top: 20px;
+    }
+
+    #img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 500px) {
+      .container {
+        padding: 20px 15px;
+      }
+
+      .container p {
+        font-size: 14px;
+      }
+
+      .container input, .container button {
+        height: 45px;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 350px) {
+      .container {
+        padding: 15px 10px;
+      }
+
+      .container p {
+        font-size: 13px;
+      }
+
+      .container input, .container button {
+        height: 40px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p>Enter Your Text or URL</p>
+    <input type="text" placeholder="Text or URL" id="text">
+    <button onclick="generateQR()">Generate QR</button>
+    <div id="image">
+      <img src="" alt="" id="img">
+    </div>
+  </div>
+
+  <script>
+    function generateQR() {
+      const text = document.getElementById("text").value;
+      const qr = document.getElementById("img");
+      qr.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" +   text;
+    }
+  </script>
+</body>
+
+</html>
