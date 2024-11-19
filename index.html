@@ -13,6 +13,11 @@
 </head>
 
 <body>
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
     <!--Nav Menu-->
     <div class="container">
         <nav class="header">
@@ -308,6 +313,13 @@
         sr.reveal('.top-header',{
 
         })
+
+                setTimeout(() => {
+  document.querySelectorAll('.circle').forEach(circle => {
+    circle.style.animation = 'none';
+    circle.style.opacity = 0;
+  });
+}, 3000);
 
         const srLeft = SrollReveal({
             origin: "left",
