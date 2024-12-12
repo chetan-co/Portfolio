@@ -137,6 +137,19 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
+ document.addEventListener('contextmenu', (e) => e.preventDefault()); // Disable right-click
+
+document.addEventListener('keydown', (e) => {
+    // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, and Ctrl+Shift+C
+    if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) ||
+        (e.ctrlKey && e.key === 'U') // Disable Ctrl+U
+    ) {
+        e.preventDefault();
+    }
+});
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click",function(){
   document.body.scrollTop = 0;
