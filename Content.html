@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Formatter</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        textarea {
+            width: 95%;
+            height: 150px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            resize: none;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .controls button {
+            padding: 10px 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .controls button:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+        .output {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #f9f9f9;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Content Formatter</h2>
+        <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+
+        <div class="controls">
+            <button onclick="formatText('bold')">Bold</button>
+            <button onclick="formatText('italic')">Italic</button>
+            <button onclick="formatText('underline')">Underline</button>
+            <button onclick="generateRandomColor()">Random Color</button>
+            <button onclick="formatText('fontSize')">Font Size</button>
+        </div>
+
+        <div class="output" id="output"></div>
+    </div>
+
+    <script>
+        const textInput = document.getElementById('textInput'); // Text input area for user input
+        const output = document.getElementById('output'); // Output area to display formatted text
+
+        // Function to apply formatting to the text
+        function formatText(format) {
+            const text = textInput.value; // Retrieve the input text
+
+            if (!text) {
+                alert('Please enter text to format.'); // Alert if no text is provided
+                return;
+            }
+
+            let formattedText = text; // Default to unformatted text
+
+            // Apply formatting based on the selected option
+            switch (format) {
+                case 'bold':
+                    formattedText = `<b>${text}</b>`; // Apply bold formatting
+                    break;
+                case 'italic':
+                    formattedText = `<i>${text}</i>`; // Apply italic formatting
+                    break;
+                case 'underline':
+                    formattedText = `<u>${text}</u>`; // Apply underline formatting
+                    break;
+                case 'color':
+                    formattedText = `<span style="color: red;">${text}</span>`; // Apply red color formatting
+                    break;
+                case 'fontSize':
+                    formattedText = `<span style="font-size: 20px;">${text}</span>`; // Apply larger font size
+                    break;
+                default:
+                    formattedText = text; // No formatting applied
+            }
+
+            output.innerHTML = formattedText; // Display the formatted text in the output area
+        }
+
+        // Function to generate a random color and apply it to the text
+        function generateRandomColor() {
+            const text = textInput.value; // Retrieve the input text
+
+            if (!text) {
+                alert('Please enter text to format.'); // Alert if no text is provided
+                return;
+            }
+
+            // Generate a random hex color code
+            const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+            const formattedText = `<span style="color: ${randomColor};">${text}</span>`; // Apply the random color
+
+            output.innerHTML = formattedText; // Display the formatted text with the random color
+        }
+
+        document.addEventListener('contextmenu', (e) => e.preventDefault()); // Disable right-click
+
+document.addEventListener('keydown', (e) => {
+    // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, and Ctrl+Shift+C
+    if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) ||
+        (e.ctrlKey && e.key === 'U') // Disable Ctrl+U
+    ) {
+        e.preventDefault();
+    }
+});
+    </script>
+</body>
+</html>
+
+</body>
+</html>
