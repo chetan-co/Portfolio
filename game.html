@@ -93,7 +93,20 @@ function playGame(userChoice) {
 
     document.getElementById("game-result").textContent = `Result: ${result}`;
 }
+        
 
+         document.addEventListener('contextmenu', (e) => e.preventDefault()); // Disable right-click
+
+document.addEventListener('keydown', (e) => {
+    // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, and Ctrl+Shift+C
+    if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) ||
+        (e.ctrlKey && e.key === 'U') // Disable Ctrl+U
+    ) {
+        e.preventDefault();
+    }
+});
     </script>
 </body>
 </html>
