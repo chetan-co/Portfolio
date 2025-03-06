@@ -385,11 +385,10 @@ footer .link-group a:hover{
     animation: pulse 3s infinite;
 }
 
-
 .chat-toggle {
             position: fixed;
-            bottom: 20px;
-            left: 20px; /* Changed from right to left */
+            top: 20px; /* Changed from bottom to top */
+            right: 20px; /* Changed from left to right */
             background-color: rgb(231, 175, 73);
             color: white;
             border: none;
@@ -401,8 +400,8 @@ footer .link-group a:hover{
         .chat-container {
             display: none;
             position: fixed;
-            bottom: 80px;
-            left: 20px; /* Changed from right to left */
+            top: 80px; /* Changed from bottom to top */
+            right: 20px; /* Changed from left to right */
             width: 350px;
             background: white;
             border-radius: 10px;
