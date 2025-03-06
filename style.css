@@ -385,7 +385,7 @@ footer .link-group a:hover{
     animation: pulse 3s infinite;
 }
 
-chat-toggle {
+.chat-toggle {
             position: fixed;
             top: 20px; /* Changed from bottom to top */
             right: 70px; /* Added 50px margin to the right */
