@@ -54,31 +54,39 @@
     <!-- navbar starts -->
     <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container-fluid px-5">
-            <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
+            <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d" data-lang="navbar.brand">Portfolio</a>
             <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="bi bi-menu-button-fill"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#" data-lang="navbar.home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Services</a>
+                        <a class="nav-link" href="#service" data-lang="navbar.services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about" data-lang="navbar.about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Projects">Projects</a>
+                        <a class="nav-link" href="#Projects" data-lang="navbar.projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonial">Testimonials</a>
+                        <a class="nav-link" href="#testimonial" data-lang="navbar.testimonials">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacts</a>
+                        <a class="nav-link" href="#contact" data-lang="navbar.contacts">Contacts</a>
                     </li>
                 </ul>
+                <div class="ms-auto">
+                    <select id="languageSwitcher" class="form-select" style="width: auto;">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="zh">Chinese</option>
+                        <option value="yo">Yoruba</option>
+                    </select>
+                </div>
             </div>
             
     </nav>
@@ -89,17 +97,17 @@
         <div class="row justify-content-evenly align-middle">
             <!-- here data-aos is used for adding aos animation  -->
             <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-                <h2 style="color: #3f396d">
-                    Hello! I Am <br /><span class="c-orange">Chetan Yadav</span>
+                <h2 style="color: #3f396d" data-lang="home.greeting">
+                    Hello! I Am <br /><span class="c-orange" data-lang="home.name">Chetan Yadav</span>
                 </h2>
-                <p class="text-muted">
+                <p class="text-muted" data-lang="home.description">
                     I'm A Web Developer having 1/2 years of experience in expertise of
                     creating website with fully responsive Also with backend part too.
                 </p>
-                <a href="My Resume.pdf"><button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                <a href="My Resume.pdf"><button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" data-lang="home.hireMe">
                     Hire Me
                  </button></a>
-                <a href="" class="link ms-4 d-none">See My Work</a>
+                <a href="" class="link ms-4 d-none" data-lang="home.seeWork">See My Work</a>
             </div>
             <div class="col-10 col-md-4 d-none d-md-block">
                 <img src="https://pawantech12.github.io/portfolio-website/images/banner-01.webp" class="img-fluid" alt="" />
@@ -111,8 +119,8 @@
     <!-- expertise section starts -->
     <section class="expertise mt-5" id="service">
         <div class="heading text-center">
-            <small>My Expertise</small>
-            <h3>
+            <small data-lang="expertise.small">My Expertise</small>
+            <h3 data-lang="expertise.heading">
                 Provide Wide Range of <br />
                 Digital Services
             </h3>
@@ -124,12 +132,12 @@
                         <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="" />
                     </div>
                     <div class="content mt-3">
-                        <h4>Web Design</h4>
-                        <p class="text-muted">
+                        <h4 data-lang="expertise.webDesign">Web Design</h4>
+                        <p class="text-muted" data-lang="expertise.webDesignDesc">
                             I specialize in creating responsive, intuitive, and aesthetically pleasing designs tailored
                             to meet your business goal
                         </p>
-                        <a href="" class="link">Read More</a>
+                        <a href="" class="link" data-lang="expertise.readMore">Read More</a>
                     </div>
                 </div>
             </div>
@@ -139,12 +147,12 @@
                         <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="" />
                     </div>
                     <div class="content mt-3">
-                        <h4>Web Development</h4>
-                        <p class="text-muted">
+                        <h4 data-lang="expertise.webDevelopment">Web Development</h4>
+                        <p class="text-muted" data-lang="expertise.webDevelopmentDesc">
                             I specialize in developing responsive and interactive web applications using modern
                             technologies like HTML, CSS, JavaScript, and Node.js
                         </p>
-                        <a href="" class="link">Read More</a>
+                        <a href="" class="link" data-lang="expertise.readMore">Read More</a>
                     </div>
                 </div>
             </div>
@@ -154,12 +162,12 @@
                         <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="" />
                     </div>
                     <div class="content mt-3">
-                        <h4>Debugging</h4>
-                        <p class="text-muted">
+                        <h4 data-lang="expertise.debugging">Debugging</h4>
+                        <p class="text-muted" data-lang="expertise.debuggingDesc">
                             Identifying and resolving errors to ensure seamless website functionality. I specialize in
                             diagnosing issues in code, optimizing performance, and enhancing user experience.
                         </p>
-                        <a href="" class="link">Read More</a>
+                        <a href="" class="link" data-lang="expertise.readMore">Read More</a>
                     </div>
                 </div>
             </div>
@@ -214,9 +222,9 @@
             </div>
             <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
                 <div class="heading mt-5 mt-md-3">
-                    <small>My Skills</small>
-                    <h3>Beautiful & Unique Digital Experiences</h3>
-                    <p class="text-muted">
+                    <small data-lang="skill.small">My Skills</small>
+                    <h3 data-lang="skill.heading">Beautiful & Unique Digital Experiences</h3>
+                    <p class="text-muted" data-lang="skill.description">
                         Frontend Development: Proficient in building responsive and user-friendly web interfaces using
                         HTML, CSS, Bootstrap, and JavaScript.
                         JavaScript: Experienced in adding interactivity and functionality to websites; currently
@@ -227,7 +235,7 @@
 
                     <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" type=>
                         <!-- here download attribute is used for adding download functionality to button  -->
-                        <a href="My Resume.pdf"  style="text-decoration: none; color: white;">Download CV</a>
+                        <a href="My Resume.pdf"  style="text-decoration: none; color: white;" data-lang="skill.downloadCV">Download CV</a>
                     </button>
                 </div>
             </div>
@@ -238,8 +246,8 @@
     <!-- portfolio section starts here -->
     <section class="portfolio" id="Projects">
         <div class="heading text-center pt-5">
-            <small>Creative Work</small>
-            <h3>Check My Projects</h3>
+            <small data-lang="portfolio.small">Creative Work</small>
+            <h3 data-lang="portfolio.heading">Check My Projects</h3>
         </div>
 
         <div id="myBtnContainer" class="text-center mt-4">
@@ -345,8 +353,8 @@
             </div>
             <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
                 <div class="heading">
-                    <small>Testimonials</small>
-                    <h3>Happy Clients Feedback</h3>
+                    <small data-lang="testimonial.small">Testimonials</small>
+                    <h3 data-lang="testimonial.heading">Happy Clients Feedback</h3>
                     <!-- here we will use carousel element from bootstrap -->
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -356,7 +364,7 @@
                                         <i class="bi bi-quote"></i>
                                     </div>
                                     <div class="col-10">
-                                        <p class="text-muted">
+                                        <p class="text-muted" data-lang="testimonial.feedback1">
                                             🌟 "Working with Chetan Yadav was an absolute pleasure. They delivered a
                                             responsive and modern website that exceeded our expectations. Highly
                                             professional and always met deadlines!"
@@ -372,7 +380,7 @@
                                         <i class="bi bi-quote"></i>
                                     </div>
                                     <div class="col-10">
-                                        <p class="text-muted">
+                                        <p class="text-muted" data-lang="testimonial.feedback2">
                                             🌟 "I was amazed by their ability to create an intuitive IoT dashboard for
                                             our team. Their professionalism, patience, and expertise stood out
                                             throughout the project."
@@ -388,7 +396,7 @@
                                         <i class="bi bi-quote"></i>
                                     </div>
                                     <div class="col-10">
-                                        <p class="text-muted">
+                                        <p class="text-muted" data-lang="testimonial.feedback3">
                                             🌟 "The website redesign was incredible! Chetan Yadav truly understood my
                                             vision and delivered a modern, responsive site that perfectly represents my
                                             brand. Highly recommended!"
@@ -612,8 +620,8 @@
     <!-- contact section starts -->
     <section class="contact py-5" id="contact">
         <div class="heading text-center">
-            <small>Get in Touch</small>
-            <h3>Any Questions? Feel Free to Contact</h3>
+            <small data-lang="contact.small">Get in Touch</small>
+            <h3 data-lang="contact.heading">Any Questions? Feel Free to Contact</h3>
         </div>
         <div class="row justify-content-evenly mt-5">
             <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
@@ -622,7 +630,7 @@
                         <i class="bi bi-geo-alt-fill"></i>
                     </div>
                     <div class="col-11">
-                        <p>Rajokari, New delhi-110038 , India</p>
+                        <p data-lang="contact.address">Rajokari, New delhi-110038 , India</p>
                     </div>
                 </div>
                 <div class="row justify-content-evenly">
@@ -630,7 +638,7 @@
                         <i class="bi bi-telephone-fill"></i>
                     </div>
                     <div class="col-11">
-                        <p>+91 8447284045</p>
+                        <p data-lang="contact.phone">+91 8447284045</p>
                     </div>
                 </div>
                 <div class="row justify-content-evenly">
@@ -638,7 +646,7 @@
                         <i class="bi bi-send-fill"></i>
                     </div>
                     <div class="col-11">
-                        <p>chetanrao2310@gmail.com</p>
+                        <p data-lang="contact.email">chetanrao2310@gmail.com</p>
                     </div>
                 </div>
                 <div class="row justify-content-evenly">
@@ -646,27 +654,25 @@
                         <i class="bi bi-globe-americas"></i>
                     </div>
                     <div class="col-11">
-                        <p>chetan yadav.com</p>
+                        <p data-lang="contact.website">chetan yadav.com</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
                 <div class="contact-form">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" data-lang="contact.form.name" />
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" />
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" data-lang="contact.form.email" />
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                            placeholder="Mobile No." />
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mobile No." data-lang="contact.form.mobile" />
                     </div>
                     <div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
-                            rows="5"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="5" data-lang="contact.form.message"></textarea>
                     </div>
-                    <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                    <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" data-lang="contact.form.submit">
                         Submit
                     </button>
                 </div>
@@ -682,17 +688,17 @@
 
     <!-- footer section starts  -->
     <footer class="text-center text-muted py-4">
-        <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+        <h3 class="text-white pt-4" data-aos="fade-up" data-lang="footer.brand">Portfolio</h3>
         <div class="link-group mt-5" data-aos="fade-up">
-            <a href="#home">Home</a>
+            <a href="#home" data-lang="footer.home">Home</a>
             <div class="vr"></div>
-            <a href="#about">About</a>
+            <a href="#about" data-lang="footer.about">About</a>
             <div class="vr"></div>
-            <a href="#service">Service</a>
+            <a href="#service" data-lang="footer.service">Service</a>
             <div class="vr"></div>
-            <a href="#Projects">Projects</a>
+            <a href="#Projects" data-lang="footer.projects">Projects</a>
             <div class="vr"></div>
-            <a href="#contact">Contact</a>
+            <a href="#contact" data-lang="footer.contact">Contact</a>
         </div>
         <div class="social-links mt-5" data-aos="fade-up">
             <button href="" class="rounded-pill dribble">
@@ -706,8 +712,7 @@
             </button>
         </div>
         <hr class="text-muted my-4" />
-
-        <p>Copyright 2024 Portfolio | All Rights Reserved.</p>
+        <p data-lang="footer.copyright">Copyright 2024 Portfolio | All Rights Reserved.</p>
     </footer>
     <!-- footer section ends here -->
 
@@ -729,7 +734,216 @@
             offset: 50,
         });
 
-       
+        const translations = {
+            en: {
+                "navbar.brand": "Portfolio",
+                "navbar.home": "Home",
+                "navbar.services": "Services",
+                "navbar.about": "About",
+                "navbar.projects": "Projects",
+                "navbar.testimonials": "Testimonials",
+                "navbar.contacts": "Contacts",
+                "home.greeting": "Hello! I Am",
+                "home.name": "Chetan Yadav",
+                "home.description": "I'm A Web Developer having 1/2 years of experience in expertise of creating website with fully responsive Also with backend part too.",
+                "home.hireMe": "Hire Me",
+                "home.seeWork": "See My Work",
+                "expertise.small": "My Expertise",
+                "expertise.heading": "Provide Wide Range of Digital Services",
+                "expertise.webDesign": "Web Design",
+                "expertise.webDesignDesc": "I specialize in creating responsive, intuitive, and aesthetically pleasing designs tailored to meet your business goal",
+                "expertise.readMore": "Read More",
+                "expertise.webDevelopment": "Web Development",
+                "expertise.webDevelopmentDesc": "I specialize in developing responsive and interactive web applications using modern technologies like HTML, CSS, JavaScript, and Node.js",
+                "expertise.debugging": "Debugging",
+                "expertise.debuggingDesc": "Identifying and resolving errors to ensure seamless website functionality. I specialize in diagnosing issues in code, optimizing performance, and enhancing user experience.",
+                "skill.small": "My Skills",
+                "skill.heading": "Beautiful & Unique Digital Experiences",
+                "skill.description": "Frontend Development: Proficient in building responsive and user-friendly web interfaces using HTML, CSS, Bootstrap, and JavaScript. JavaScript: Experienced in adding interactivity and functionality to websites; currently expanding knowledge in JavaScript frameworks and libraries. Backend Development: Familiar with Node.js for creating server-side applications and handling backend logic.",
+                "skill.downloadCV": "Download CV",
+                "portfolio.small": "Creative Work",
+                "portfolio.heading": "Check My Projects",
+                "contact.small": "Get in Touch",
+                "contact.heading": "Any Questions? Feel Free to Contact",
+                "footer.home": "Home",
+                "footer.about": "About",
+                "footer.service": "Service",
+                "footer.projects": "Projects",
+                "footer.contact": "Contact",
+                "testimonial.small": "Testimonials",
+                "testimonial.heading": "Happy Clients Feedback",
+                "testimonial.feedback1": "🌟 \"Working with Chetan Yadav was an absolute pleasure. They delivered a responsive and modern website that exceeded our expectations. Highly professional and always met deadlines!\"",
+                "testimonial.feedback2": "🌟 \"I was amazed by their ability to create an intuitive IoT dashboard for our team. Their professionalism, patience, and expertise stood out throughout the project.\"",
+                "testimonial.feedback3": "🌟 \"The website redesign was incredible! Chetan Yadav truly understood my vision and delivered a modern, responsive site that perfectly represents my brand. Highly recommended!\"",
+                "contact.address": "Rajokari, New delhi-110038 , India",
+                "contact.phone": "+91 8447284045",
+                "contact.email": "chetanrao2310@gmail.com",
+                "contact.website": "chetan yadav.com",
+                "contact.form.name": "Name",
+                "contact.form.email": "E-mail",
+                "contact.form.mobile": "Mobile No.",
+                "contact.form.message": "Message",
+                "contact.form.submit": "Submit"
+            },
+            hi: {
+                "navbar.brand": "पोर्टफोलियो",
+                "navbar.home": "होम",
+                "navbar.services": "सेवाएं",
+                "navbar.about": "के बारे में",
+                "navbar.projects": "परियोजनाओं",
+                "navbar.testimonials": "प्रशंसापत्र",
+                "navbar.contacts": "संपर्क करें",
+                "home.greeting": "नमस्ते! मैं हूँ",
+                "home.name": "चेतन यादव",
+                "home.description": "मैं एक वेब डेवलपर हूँ जिसके पास वेबसाइट बनाने का 1/2 साल का अनुभव है जो पूरी तरह से उत्तरदायी है और बैकएंड भाग भी है।",
+                "home.hireMe": "मुझे नियुक्त करें",
+                "home.seeWork": "मेरा काम देखें",
+                "expertise.small": "मेरी विशेषज्ञता",
+                "expertise.heading": "डिजिटल सेवाओं की विस्तृत श्रृंखला प्रदान करें",
+                "expertise.webDesign": "वेब डिज़ाइन",
+                "expertise.webDesignDesc": "मैं आपके व्यावसायिक लक्ष्य को पूरा करने के लिए उत्तरदायी, सहज और सौंदर्यपूर्ण डिज़ाइन बनाने में विशेषज्ञता रखता हूँ",
+                "expertise.readMore": "और पढ़ें",
+                "expertise.webDevelopment": "वेब विकास",
+                "expertise.webDevelopmentDesc": "मैं HTML, CSS, JavaScript और Node.js जैसी आधुनिक तकनीकों का उपयोग करके उत्तरदायी और इंटरैक्टिव वेब एप्लिकेशन विकसित करने में विशेषज्ञता रखता हूँ",
+                "expertise.debugging": "डीबगिंग",
+                "expertise.debuggingDesc": "त्रुटियों की पहचान करना और उन्हें हल करना ताकि वेबसाइट की कार्यक्षमता निर्बाध बनी रहे। मैं कोड में समस्याओं का निदान करने, प्रदर्शन को अनुकूलित करने और उपयोगकर्ता अनुभव को बढ़ाने में विशेषज्ञता रखता हूँ।",
+                "skill.small": "मेरे कौशल",
+                "skill.heading": "सुंदर और अद्वितीय डिजिटल अनुभव",
+                "skill.description": "फ्रंटेंड डेवलपमेंट: HTML, CSS, बूटस्ट्रैप और जावास्क्रिप्ट का उपयोग करके उत्तरदायी और उपयोगकर्ता-अनुकूल वेब इंटरफेस बनाने में प्रवीण। जावास्क्रिप्ट: वेबसाइटों में इंटरएक्टिविटी और कार्यक्षमता जोड़ने में अनुभवी; वर्तमान में जावास्क्रिप्ट फ्रेमवर्क और लाइब्रेरी में ज्ञान का विस्तार कर रहा हूँ। बैकएंड डेवलपमेंट: सर्वर-साइड एप्लिकेशन बनाने और बैकएंड लॉजिक को संभालने के लिए Node.js से परिचित।",
+                "skill.downloadCV": "सीवी डाउनलोड करें",
+                "portfolio.small": "रचनात्मक कार्य",
+                "portfolio.heading": "मेरे प्रोजेक्ट्स देखें",
+                "contact.small": "संपर्क में रहें",
+                "contact.heading": "कोई प्रश्न? संपर्क करने में संकोच न करें",
+                "footer.home": "होम",
+                "footer.about": "के बारे में",
+                "footer.service": "सेवा",
+                "footer.projects": "परियोजनाओं",
+                "footer.contact": "संपर्क करें",
+                "testimonial.small": "प्रशंसापत्र",
+                "testimonial.heading": "खुश ग्राहकों की प्रतिक्रिया",
+                "testimonial.feedback1": "🌟 \"चेतन यादव के साथ काम करना एक परम आनंद था। उन्होंने एक उत्तरदायी और आधुनिक वेबसाइट वितरित की जो हमारी अपेक्षाओं से अधिक थी। अत्यधिक पेशेवर और हमेशा समय सीमा को पूरा किया!\"",
+                "testimonial.feedback2": "🌟 \"हमारी टीम के लिए एक सहज IoT डैशबोर्ड बनाने की उनकी क्षमता से मैं चकित था। उनकी व्यावसायिकता, धैर्य और विशेषज्ञता पूरे प्रोजेक्ट में सबसे अलग थी।\"",
+                "testimonial.feedback3": "🌟 \"वेबसाइट का पुन: डिज़ाइन अविश्वसनीय था! चेतन यादव ने वास्तव में मेरी दृष्टि को समझा और एक आधुनिक, उत्तरदायी साइट वितरित की जो पूरी तरह से मेरे ब्रांड का प्रतिनिधित्व करती है। अत्यधिक अनुशंसित!\"",
+                "contact.address": "राजोकरी, नई दिल्ली-110038, भारत",
+                "contact.phone": "+91 8447284045",
+                "contact.email": "chetanrao2310@gmail.com",
+                "contact.website": "चेतन यादव.कॉम",
+                "contact.form.name": "नाम",
+                "contact.form.email": "ई-मेल",
+                "contact.form.mobile": "मोबाइल नंबर",
+                "contact.form.message": "संदेश",
+                "contact.form.submit": "जमा करें"
+            },
+            zh: {
+                "navbar.brand": "投资组合",
+                "navbar.home": "主页",
+                "navbar.services": "服务",
+                "navbar.about": "关于",
+                "navbar.projects": "项目",
+                "navbar.testimonials": "推荐",
+                "navbar.contacts": "联系",
+                "home.greeting": "你好！我是",
+                "home.name": "切坦·亚达夫",
+                "home.description": "我是一名拥有1/2年经验的网页开发人员，擅长创建完全响应的网站以及后端部分。",
+                "home.hireMe": "雇用我",
+                "home.seeWork": "查看我的工作",
+                "expertise.small": "我的专长",
+                "expertise.heading": "提供广泛的数字服务",
+                "expertise.webDesign": "网页设计",
+                "expertise.webDesignDesc": "我专注于创建响应迅速、直观且美观的设计，以满足您的业务目标",
+                "expertise.readMore": "阅读更多",
+                "expertise.webDevelopment": "网页开发",
+                "expertise.webDevelopmentDesc": "我专注于使用HTML、CSS、JavaScript和Node.js等现代技术开发响应式和交互式Web应用程序",
+                "expertise.debugging": "调试",
+                "expertise.debuggingDesc": "识别和解决错误以确保网站功能无缝。我专注于诊断代码中的问题、优化性能和增强用户体验。",
+                "skill.small": "我的技能",
+                "skill.heading": "美丽而独特的数字体验",
+                "skill.description": "前端开发：精通使用HTML、CSS、Bootstrap和JavaScript构建响应式和用户友好的Web界面。 JavaScript：在为网站添加交互性和功能方面经验丰富；目前正在扩展JavaScript框架和库的知识。 后端开发：熟悉Node.js，用于创建服务器端应用程序和处理后端逻辑。",
+                "skill.downloadCV": "下载简历",
+                "portfolio.small": "创意作品",
+                "portfolio.heading": "查看我的项目",
+                "contact.small": "保持联系",
+                "contact.heading": "有任何问题？随时联系",
+                "footer.home": "主页",
+                "footer.about": "关于",
+                "footer.service": "服务",
+                "footer.projects": "项目",
+                "footer.contact": "联系",
+                "testimonial.small": "推荐",
+                "testimonial.heading": "客户反馈",
+                "testimonial.feedback1": "🌟 \"与Chetan Yadav合作绝对是一种乐趣。他们交付了一个响应迅速且现代的网站，超出了我们的预期。非常专业，并且总是按时完成任务！\"",
+                "testimonial.feedback2": "🌟 \"他们为我们的团队创建直观的物联网仪表板的能力让我感到惊讶。他们的专业精神、耐心和专业知识在整个项目中脱颖而出。\"",
+                "testimonial.feedback3": "🌟 \"网站重新设计令人难以置信！Chetan Yadav真正理解了我的愿景，并交付了一个现代、响应迅速的网站，完美地代表了我的品牌。强烈推荐！\"",
+                "contact.address": "拉乔卡里，新德里-110038，印度",
+                "contact.phone": "+91 8447284045",
+                "contact.email": "chetanrao2310@gmail.com",
+                "contact.website": "切坦亚达夫.康姆",
+                "contact.form.name": "姓名",
+                "contact.form.email": "电子邮件",
+                "contact.form.mobile": "手机号码",
+                "contact.form.message": "信息",
+                "contact.form.submit": "提交"
+            },
+            yo: {
+                "navbar.brand": "Portfolio",
+                "navbar.home": "Ile",
+                "navbar.services": "Awọn iṣẹ",
+                "navbar.about": "Nipa",
+                "navbar.projects": "Awọn iṣẹ akanṣe",
+                "navbar.testimonials": "Awọn ẹrí",
+                "navbar.contacts": "Pe",
+                "home.greeting": "Pẹlẹ o! Emi ni",
+                "home.name": "Chetan Yadav",
+                "home.description": "Emi jẹ Olùgbéejáde Ayelujara pẹlu iriri ọdun 1/2 ni amọja ti ṣiṣẹda oju opo wẹẹbu pẹlu idahun ni kikun Pẹ̀lú apakan ẹhin tun.",
+                "home.hireMe": "Gba mi",
+                "home.seeWork": "Wo iṣẹ mi",
+                "expertise.small": "Ọjọgbọn mi",
+                "expertise.heading": "Pese Iwọn Didara ti Awọn iṣẹ Digital",
+                "expertise.webDesign": "Apẹrẹ Ayelujara",
+                "expertise.webDesignDesc": "Mo ṣe amọja ni ṣiṣẹda awọn apẹrẹ idahun, ogbon inu, ati ẹwa ti a ṣe adani lati pade ibi-afẹde iṣowo rẹ",
+                "expertise.readMore": "Ka siwaju",
+                "expertise.webDevelopment": "Idagbasoke Ayelujara",
+                "expertise.webDevelopmentDesc": "Mo ṣe amọja ni idagbasoke awọn ohun elo wẹẹbu idahun ati ibaraenisepo nipa lilo awọn imọ-ẹrọ igbalode bi HTML, CSS, JavaScript, ati Node.js",
+                "expertise.debugging": "Ṣiṣatunṣe",
+                "expertise.debuggingDesc": "Idamo ati ipinnu awọn aṣiṣe lati rii daju iṣẹ ṣiṣe oju opo wẹẹbu alaimuṣinṣin. Mo ṣe amọja ni didasilẹ awọn ọran ni koodu, imudara iṣẹ, ati imudarasi iriri olumulo.",
+                "skill.small": "Awọn ọgbọn mi",
+                "skill.heading": "Awọn iriri Digital Alarinrin & Alailẹgbẹ",
+                "skill.description": "Idagbasoke Frontend: Imọ-ẹrọ ni kikọ awọn wiwo wẹẹbu idahun ati ore-olumulo nipa lilo HTML, CSS, Bootstrap, ati JavaScript. JavaScript: Iriri ni fifi ibaraenisepo ati iṣẹ-ṣiṣe kun awọn oju opo wẹẹbu; lọwọlọwọ n gbooro imọ ni awọn ilana JavaScript ati awọn ile-ikawe. Idagbasoke Backend: Mọ pẹlu Node.js fun ṣiṣẹda awọn ohun elo ẹgbẹ olupin ati mimu ẹhin ẹhin.",
+                "skill.downloadCV": "Gba CV",
+                "portfolio.small": "Iṣẹ Oniruuru",
+                "portfolio.heading": "Ṣayẹwo Awọn iṣẹ mi",
+                "contact.small": "Wa ni Ifọwọkan",
+                "contact.heading": "Awọn ibeere eyikeyi? Lero ọfẹ lati kan si",
+                "footer.home": "Ile",
+                "footer.about": "Nipa",
+                "footer.service": "Iṣẹ",
+                "footer.projects": "Awọn iṣẹ akanṣe",
+                "footer.contact": "Pe",
+                "testimonial.small": "Awọn ẹrí",
+                "testimonial.heading": "Atunwo Awọn alabara Ayọ",
+                "testimonial.feedback1": "🌟 \"Ṣiṣẹ pẹlu Chetan Yadav jẹ idunnu pipe. Wọn fi oju opo wẹẹbu idahun ati igbalode ti o kọja awọn ireti wa. Ọjọgbọn giga ati nigbagbogbo pade awọn ipari!\"",
+                "testimonial.feedback2": "🌟 \"Mo jẹ iyalẹnu nipasẹ agbara wọn lati ṣẹda pẹpẹ IoT ogbon inu fun ẹgbẹ wa. Ọjọgbọn wọn, suuru, ati ọgbọn wọn duro jade jakejado iṣẹ akanṣe naa.\"",
+                "testimonial.feedback3": "🌟 \"Atunṣe oju opo wẹẹbu jẹ iyalẹnu! Chetan Yadav loye iran mi gaan ati fi aaye igbalode, idahun ti o ṣe aṣoju ami iyasọtọ mi ni pipe. Ti a ṣe iṣeduro pupọ!\"",
+                "contact.address": "Rajokari, New delhi-110038 , India",
+                "contact.phone": "+91 8447284045",
+                "contact.email": "chetanrao2310@gmail.com",
+                "contact.website": "chetan yadav.com",
+                "contact.form.name": "Name",
+                "contact.form.email": "E-mail",
+                "contact.form.mobile": "Mobile No.",
+                "contact.form.message": "Message",
+                "contact.form.submit": "Submit"
+            }
+        };
+
+        document.getElementById('languageSwitcher').addEventListener('change', function() {
+            const selectedLang = this.value;
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                element.textContent = translations[selectedLang][key];
+            });
+        });
         
     </script>
     <!-- custom js file linking -->
